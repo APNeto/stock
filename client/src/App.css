@@ -1,0 +1,72 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  width: 100%;
+}
+
+.stock-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stock-card {
+  background-color: #2f3542;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  min-width: 250px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid #4a505e;
+}
+
+.stock-card h2 {
+  margin-top: 0;
+  color: #a4b0be;
+  font-size: 1.8rem;
+}
+
+.stock-card p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.positive {
+  color: #2ed573;
+  font-weight: bold;
+}
+
+.negative {
+  color: #ff4949;
+  font-weight: bold;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
