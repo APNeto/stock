@@ -48,6 +48,14 @@
   font-weight: bold;
 }
 
+.market-data {
+  font-size: 0.95rem;
+  color: #a4b0be;
+  border-top: 1px solid #4a505e;
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

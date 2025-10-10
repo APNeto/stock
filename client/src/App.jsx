@@ -48,6 +48,18 @@ function App() {
                     {stock.regularMarketChangePercent.toFixed(2)}%)
                   </span>
                 </p>
+                <p className="market-data">
+                  <strong>High:</strong> R$ {stock.regularMarketDayHigh}
+                </p>
+                <p className="market-data">
+                  <strong>Low:</strong> R$ {stock.regularMarketDayLow}
+                </p>
+                <p className="market-data">
+                  <strong>Volume:</strong> {stock.regularMarketVolume.toLocaleString("pt-Br")}
+                </p>
+                <p className="market-data">
+                  <strong>Mkt Cap:</strong> R${' '} {(stock.marketCap / 1000000000).toFixed(2)}B
+                </p>
               </div>
             ))}
           </div>
