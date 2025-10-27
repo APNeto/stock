@@ -11,7 +11,11 @@ const API_TOKEN = process.env.API_TOKEN
 app.use(cors());
 
 app.get('/api/stocks', async (req, res) => {
-	const tickers = ['MBRF3', 'JBSS32'];
+	const tickersQuery = req.query.tickers;
+	let tickers = ['MBRF3', 'JBSS32'];
+
+	tickers = tickersQuery ? tickersQuery.split(',') : tickers;
+
 	try {
 		const requests = tickers.map(ticker =>
 			axios.get(`https://brapi.dev/api/quote/${ticker}?token=${API_TOKEN}`)
